@@ -164,7 +164,7 @@ package(default_visibility = ["//visibility:public"])
 folly_library(with_gflags = {})
 """.format(with_gflags),
         strip_prefix = "folly-{}".format(folly_version),
-        sha256 = "8fb0a5392cbf6da1233c59933fff880dd77bbe61e0e2d578347ff436c776eda5",
+        sha256 = "d03d131c9480e1229337fe1c3163efab8eedbb27d4ed4844a4ddff99eaf0e8a9",
         urls = [
             "https://github.com/facebook/folly/archive/v{}.tar.gz".format(folly_version),
         ],
