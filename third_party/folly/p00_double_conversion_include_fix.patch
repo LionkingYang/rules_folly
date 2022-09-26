@@ -2,7 +2,7 @@ diff --git a/folly/Conv.h b/folly/Conv.h
 index 0157a6c..ce7a259 100644
 --- a/folly/Conv.h
 +++ b/folly/Conv.h
-@@ -117,7 +117,7 @@
+@@ -117,4 +117,4 @@
  #include <type_traits>
  #include <utility>
  
