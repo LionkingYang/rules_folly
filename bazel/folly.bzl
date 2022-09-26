@@ -47,6 +47,7 @@ def folly_library(
     hdrs = native.glob(["folly/**/*.h"], exclude = common_excludes + [
         "folly/test/**/*.h",
         "folly/docs/**/*.h",
+        "folly/io/**/*.h",
         "folly/**/test/**/*.h",
         "folly/python/fibers.h",
         "folly/python/GILAwareManualExecutor.h",
@@ -55,6 +56,7 @@ def folly_library(
         "folly/Benchmark.cpp",
         "folly/test/**/*.cpp",
         "folly/docs/**/*.cpp",
+        "folly/io/**/*.cpp",
         "folly/**/test/**/*.cpp",
         "folly/**/*Test.cpp",
         "folly/experimental/JSONSchemaTester.cpp",
@@ -72,32 +74,10 @@ def folly_library(
     hdrs = hdrs + [
         "folly/container/test/F14TestUtil.h",
         "folly/container/test/TrackingTypes.h",
-        "folly/io/async/test/AsyncSSLSocketTest.h",
-        "folly/io/async/test/AsyncSocketTest.h",
-        "folly/io/async/test/AsyncSocketTest2.h",
-        "folly/io/async/test/BlockingSocket.h",
-        "folly/io/async/test/MockAsyncSocket.h",
-        "folly/io/async/test/MockAsyncServerSocket.h",
-        "folly/io/async/test/MockAsyncSSLSocket.h",
-        "folly/io/async/test/MockAsyncTransport.h",
-        "folly/io/async/test/MockAsyncUDPSocket.h",
-        "folly/io/async/test/MockTimeoutManager.h",
-        "folly/io/async/test/ScopedBoundPort.h",
-        "folly/io/async/test/SocketPair.h",
-        "folly/io/async/test/TestSSLServer.h",
-        "folly/io/async/test/TimeUtil.h",
-        "folly/io/async/test/UndelayedDestruction.h",
-        "folly/io/async/test/Util.h",
         "folly/synchronization/test/Semaphore.h",
         "folly/test/DeterministicSchedule.h",
         "folly/test/JsonTestUtil.h",
         "folly/test/TestUtils.h",
-    ]
-
-    srcs = srcs + [
-        "folly/io/async/test/ScopedBoundPort.cpp",
-        "folly/io/async/test/SocketPair.cpp",
-        "folly/io/async/test/TimeUtil.cpp",
     ]
 
     # Exclude specific sources if we do not have third-party libraries
