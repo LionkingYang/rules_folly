@@ -268,6 +268,7 @@ def folly_library(
             "-pthread",
             "-ldl",
             "-lstdc++fs",
+            "-liberty",
         ],
         # if (FOLLY_STDLIB_LIBSTDCXX AND NOT FOLLY_STDLIB_LIBSTDCXX_GE_9)
         # list (APPEND CMAKE_REQUIRED_LIBRARIES stdc++fs)
