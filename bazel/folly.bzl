@@ -46,6 +46,7 @@ def folly_library(
 
     hdrs = native.glob(["folly/**/*.h"], exclude = common_excludes + [
         "folly/test/**/*.h",
+        "folly/docs/**/*.h",
         "folly/**/test/**/*.h",
         "folly/python/fibers.h",
         "folly/python/GILAwareManualExecutor.h",
@@ -53,6 +54,7 @@ def folly_library(
     srcs = native.glob(["folly/**/*.cpp"], exclude = common_excludes + [
         "folly/Benchmark.cpp",
         "folly/test/**/*.cpp",
+        "folly/docs/**/*.cpp",
         "folly/**/test/**/*.cpp",
         "folly/**/*Test.cpp",
         "folly/experimental/JSONSchemaTester.cpp",
