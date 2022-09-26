@@ -55,6 +55,7 @@ def folly_library(
         "folly/Benchmark.cpp",
         "folly/test/**/*.cpp",
         "folly/docs/**/*.cpp",
+        "folly/io/async/AsyncSocket.cpp",
         "folly/**/test/**/*.cpp",
         "folly/**/*Test.cpp",
         "folly/experimental/JSONSchemaTester.cpp",
