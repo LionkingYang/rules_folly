@@ -2,7 +2,7 @@ diff --git a/folly/Conv.h b/folly/Conv.h
 index 0157a6c..ce7a259 100644
 --- a/folly/Conv.h
 +++ b/folly/Conv.h
-@@ -111,7 +111,7 @@
+@@ -120,7 +120,7 @@
  #include <type_traits>
  #include <utility>
  
@@ -15,7 +15,7 @@ diff --git a/folly/Format.cpp b/folly/Format.cpp
 index b85dacf..ec1b515 100644
 --- a/folly/Format.cpp
 +++ b/folly/Format.cpp
-@@ -22,7 +22,7 @@
+@@ -25,7 +25,7 @@
  #include <folly/CppAttributes.h>
  #include <folly/container/Array.h>
  
