@@ -38,9 +38,9 @@ glog_library(with_gflags = {})
         maybe(
             http_archive,
             name = "double-conversion",
-            strip_prefix = "double-conversion-3.1.5",
+            strip_prefix = "double-conversion-3.2.1",
             sha256 = "a63ecb93182134ba4293fd5f22d6e08ca417caafa244afaa751cbfddf6415b13",
-            urls = ["https://github.com/google/double-conversion/archive/v3.1.5.tar.gz"],
+            urls = ["https://github.com/google/double-conversion/archive/v3.2.1.tar.gz"],
         )
 
     if with_syslibs:
