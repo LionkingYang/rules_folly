@@ -173,7 +173,7 @@ def folly_library(
         "@FOLLY_HAVE_PTHREAD@": "1",
         "@FOLLY_HAVE_PTHREAD_ATFORK@": "1",
         "@FOLLY_HAVE_ACCEPT4@": "1",
-        "@FOLLY_HAVE_GETRANDOM@": "1",
+        "@FOLLY_HAVE_GETRANDOM@": "0",
         "@FOLLY_HAVE_PREADV@": "1",
         "@FOLLY_HAVE_PWRITEV@": "1",
         "@FOLLY_HAVE_CLOCK_GETTIME@": "1",
