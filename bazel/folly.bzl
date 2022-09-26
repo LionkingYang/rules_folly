@@ -172,7 +172,7 @@ def folly_library(
 
     # TODO(jiaming)
     common_defs = {
-        "@SCM_TIMESTAMPING@": "0",
+        "@FOLLY_HAVE_SO_TIMESTAMPING@": "1",
         "@FOLLY_HAVE_PTHREAD@": "1",
         "@FOLLY_HAVE_PTHREAD_ATFORK@": "1",
         "@FOLLY_HAVE_ACCEPT4@": "1",
